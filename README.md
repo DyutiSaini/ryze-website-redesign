@@ -1,16 +1,36 @@
-# React + Vite
+# Ryze Website Redesign
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Live Demo
 
-Currently, two official plugins are available:
+Live Website: https://ryze-redesign-dyuti.netlify.app/  
+GitHub Repository: https://github.com/DyutiSaini/ryze-website-redesign
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Objective
 
-## React Compiler
+This project is a redesign of the Get-Ryze.ai website focused on improving
+visual appeal, user experience, and clarity of communication while keeping
+the design modern, clean, and professional.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Pages Implemented
 
-## Expanding the ESLint configuration
+- Home
+- Features
+- Pricing
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Design Decisions
+
+- Used a clean SaaS-style layout to clearly communicate Ryze’s value.
+- Chose a navy-blue color palette to convey trust, professionalism, and AI reliability.
+- Designed reusable sections such as Navbar, Hero, Features, Pricing, and Footer.
+- Focused on spacing, typography, and contrast for better readability.
+
+## Technical Decisions
+
+- Built using React with React Router for navigation.
+- Used plain CSS for full control over layout and responsiveness.
+- Implemented responsive design using CSS Grid and media queries.
+- No backend or form logic included as per assignment requirements.
+
+## Deployment
+
+The project is deployed on Netlify with automatic builds from GitHub.
