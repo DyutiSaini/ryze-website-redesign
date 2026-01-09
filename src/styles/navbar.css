@@ -1,0 +1,78 @@
+.navbar {
+  width: 100%;
+  background: var(--navy);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-content {
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo */
+.logo {
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--light);
+  letter-spacing: -0.4px;
+}
+
+/* Nav links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2.5rem;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--light);
+  position: relative;
+  transition: color 0.2s ease;
+}
+
+/* Underline hover effect */
+.nav-links li a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: var(--primary);
+  left: 0;
+  bottom: -6px;
+  transition: width 0.25s ease;
+}
+
+.nav-links li a:hover::after {
+  width: 100%;
+}
+
+.nav-links li a:hover {
+  color: var(--primary);
+}
+
+/* CTA Button */
+.nav-cta {
+  padding: 0.55rem 1.4rem;
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .nav-cta {
+    padding: 0.45rem 1.1rem;
+    font-size: 0.85rem;
+  }
+}

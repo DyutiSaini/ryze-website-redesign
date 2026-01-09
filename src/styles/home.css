@@ -1,0 +1,218 @@
+/* HERO SECTION */
+.hero {
+  background: linear-gradient(to bottom, #003459, #0a4c7d);
+  color: #ffffff;
+  padding: 6rem 0 7rem;
+}
+
+.hero-content {
+  max-width: 750px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  line-height: 1.15;
+  margin-bottom: 1.5rem;
+  /* color: #ffffff; */
+}
+
+.hero-content p {
+  font-size: 1.15rem;
+  color: #e2e8f0;
+  margin-bottom: 2.5rem;
+  line-height: 1.7;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+/* Hero buttons override */
+.hero .btn-primary {
+  background: #ffffff;
+  color: #003459;
+}
+
+.hero .btn-primary:hover {
+  background: #e5e7eb;
+}
+
+.hero .btn-secondary {
+  border-color: #ffffff;
+  color: #ffffff;
+}
+
+.hero .btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+/* FEATURES PREVIEW */
+.features-preview {
+  padding: 4rem 0;
+  background: #ffffff;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2.5rem;
+  letter-spacing: -0.3px;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.feature-card {
+  padding: 2rem;
+  text-align: center;
+}
+
+/* HOW IT WORKS */
+.how-it-works {
+  padding: 4rem 0;
+  background: var(--high);
+}
+
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.step-card {
+  padding: 2rem;
+  text-align: center;
+}
+
+.step-number {
+  display: inline-block;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+/* TESTIMONIALS */
+.testimonials {
+  padding: 4rem 0;
+  background: #ffffff;
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.testimonial-card {
+  padding: 2rem;
+}
+
+.testimonial-card p {
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+/* PRICING PREVIEW */
+.pricing-preview {
+  padding: 4rem 0;
+  background: var(--high);
+}
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.pricing-card {
+  padding: 2rem;
+  text-align: center;
+}
+
+.pricing-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0;
+}
+.section-title {
+  color: #ffffff;
+}
+
+.price {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 1rem 0;
+}
+
+/* FINAL CTA */
+.final-cta {
+  padding: 4rem 0;
+  text-align: center;
+  background: #ffffff;
+}
+
+.final-cta h2 {
+  margin-bottom: 1rem;
+}
+
+.final-cta p {
+  margin-bottom: 2rem;
+  color: var(--gray);
+}
+
+/* WORD-BY-WORD HERO ANIMATION (RUN ONCE) */
+.hero-title {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.hero-title span {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(40px);
+
+  animation-name: wordUp;
+  animation-duration: 0.8s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards; /* 👈 THIS STOPS LOOP */
+}
+
+/* Stagger delays */
+.hero-title span:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.hero-title span:nth-child(2) {
+  animation-delay: 0.25s;
+}
+.hero-title span:nth-child(3) {
+  animation-delay: 0.4s;
+}
+.hero-title span:nth-child(4) {
+  animation-delay: 0.55s;
+}
+.hero-title span:nth-child(5) {
+  animation-delay: 0.7s;
+}
+
+@keyframes wordUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

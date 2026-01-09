@@ -1,0 +1,82 @@
+.pricing-page {
+  padding: 4rem 0;
+  background: linear-gradient(to bottom, #003459, #0a4c7d);
+}
+
+.pricing-header {
+  text-align: center;
+  margin-bottom: 3rem;
+  color: var(--light);
+}
+
+.pricing-header p {
+  max-width: 600px;
+  margin: 1rem auto 0;
+  color: var(--light);
+}
+
+.faq-item {
+  color: rgba(114, 176, 221, 0.795);
+}
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.pricing-card {
+  padding: 2rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.pricing-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0;
+}
+
+.pricing-card li {
+  margin-bottom: 0.5rem;
+}
+
+.pricing-card.highlight {
+  border: 3px solid var(--primary);
+}
+
+.price {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 1rem 0;
+}
+
+.pricing-faq {
+  margin-top: 4rem;
+  color: rgba(10, 13, 33, 0.805);
+}
+
+.faq-item {
+  margin-bottom: 1.5rem;
+}
+
+.faq-item p {
+  color: var(--light);
+}
+
+.pricing-cta {
+  margin-top: 4rem;
+  text-align: center;
+  color: var(--light);
+}
+
+.pricing-cta h2 {
+  padding: 2rem;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .pricing-grid {
+    grid-template-columns: 1fr;
+  }
+}
