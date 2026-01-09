@@ -186,10 +186,9 @@
   animation-name: wordUp;
   animation-duration: 0.8s;
   animation-timing-function: ease-out;
-  animation-fill-mode: forwards; /* 👈 THIS STOPS LOOP */
+  animation-fill-mode: forwards;
 }
 
-/* Stagger delays */
 .hero-title span:nth-child(1) {
   animation-delay: 0.1s;
 }

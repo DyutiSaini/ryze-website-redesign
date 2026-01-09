@@ -1,35 +1,41 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import "../styles/navbar.css";
 
 function Navbar() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <nav className="navbar">
       <div className="container navbar-content">
-        {/* Logo */}
-        <Link to="/" className="logo">
-          Ryze
-        </Link>
+        <div className="logo">Ryze</div>
 
-        {/* Nav Links */}
-        <ul className="nav-links">
+        {/* Desktop + Mobile links */}
+        <ul className={`nav-links ${menuOpen ? "active" : ""}`}>
           <li>
-            <Link to="/">Home</Link>
+            <Link to="/" onClick={() => setMenuOpen(false)}>Home</Link>
           </li>
           <li>
-            <Link to="/features">Features</Link>
+            <Link to="/features" onClick={() => setMenuOpen(false)}>Features</Link>
           </li>
           <li>
-            <Link to="/pricing">Pricing</Link>
+            <Link to="/pricing" onClick={() => setMenuOpen(false)}>Pricing</Link>
           </li>
         </ul>
 
-        {/* CTA */}
-        <Link to="/pricing" className="btn-primary nav-cta">
-          Book a Demo
-        </Link>
+        {/* Hamburger icon */}
+        <div
+          className={`hamburger ${menuOpen ? "open" : ""}`}
+          onClick={() => setMenuOpen(!menuOpen)}
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </div>
     </nav>
   );
 }
 
 export default Navbar;
+
